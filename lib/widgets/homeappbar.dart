@@ -18,10 +18,10 @@ class HomeAppbar extends StatelessWidget {
               bottomLeft: Radius.circular(35),
             ),
           ),
-          child: Padding(
-            padding: const EdgeInsets.only(left: 18.0),
+          child: const Padding(
+            padding: EdgeInsets.only(left: 18.0),
             child: Row(
-              children: const [
+              children: [
                 Icon(
                   Icons.menu,
                   color: Colors.white,
@@ -55,32 +55,32 @@ class HomeAppbar extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(
-              top:70.0,
+            top: 70.0,
             left: 18,
             right: 18,
           ),
           child: Container(
             decoration: BoxDecoration(
-                color: Colors.white,
-              borderRadius: BorderRadius.circular(30)
-            ),
+                color: Colors.white, borderRadius: BorderRadius.circular(30)),
             height: 40,
-            width:400,
-            child: Padding(
-              padding: const EdgeInsets.only(left: 20.0,right: 20),
+            width: 400,
+            child: const Padding(
+              padding: EdgeInsets.only(left: 20.0, right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Search',style: TextStyle(
+                  Text(
+                    'Search',
+                    style: TextStyle(color: Colors.red, fontSize: 18),
+                  ),
+                  Icon(
+                    Icons.search,
                     color: Colors.red,
-                    fontSize: 18
-                  ),),
-                  Icon(Icons.search,color: Colors.red,)
+                  )
                 ],
               ),
             ),
           ),
-          
         ),
       ],
     );

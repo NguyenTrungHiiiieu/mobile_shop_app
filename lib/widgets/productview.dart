@@ -11,10 +11,9 @@ class ProductView extends StatelessWidget {
         children: [
           Container(
             decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(12)),
-            child: Row(
-              children: const [
+                color: Colors.white, borderRadius: BorderRadius.circular(12)),
+            child: const Row(
+              children: [
                 Icon(
                   Icons.apple,
                   size: 35,
@@ -36,8 +35,8 @@ class ProductView extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(12)),
-            child: Row(
-              children: const [
+            child: const Row(
+              children: [
                 Icon(
                   Icons.phone_android,
                   size: 35,
@@ -59,8 +58,8 @@ class ProductView extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(12)),
-            child: Row(
-              children: const [
+            child: const Row(
+              children: [
                 Icon(
                   Icons.watch,
                   size: 35,
@@ -79,8 +78,8 @@ class ProductView extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(12)),
-            child: Row(
-              children: const [
+            child: const Row(
+              children: [
                 Icon(
                   Icons.cable,
                   size: 35,

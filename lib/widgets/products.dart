@@ -6,15 +6,15 @@ class ProdutsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.count(
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
       childAspectRatio: 0.67,
       shrinkWrap: true,
       children: [
         //for (int i = 1 ; i <02i ++)
         Container(
-          padding: EdgeInsets.only(left: 14, right: 14, top: 10),
-          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+          padding: const EdgeInsets.only(left: 14, right: 14, top: 10),
+          margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
@@ -25,9 +25,9 @@ class ProdutsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.all(6),
+                    padding: const EdgeInsets.all(6),
                     decoration: BoxDecoration(
-                      color: Color(
+                      color: const Color(
                         0xff784abc,
                       ),
                       borderRadius: BorderRadius.circular(20),
@@ -47,7 +47,7 @@ class ProdutsPage extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: Image.asset(
                     'assets/images/img2.png',
                     height: 120,
@@ -68,26 +68,31 @@ class ProdutsPage extends StatelessWidget {
                   style: TextStyle(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("\$100",style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                    color: Colors.red
-                  ),),
-                  Icon(Icons.add_shopping_cart,color: Colors.red,),
+                  Text(
+                    "\$100",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.red),
+                  ),
+                  Icon(
+                    Icons.add_shopping_cart,
+                    color: Colors.red,
+                  ),
                 ],
               )
             ],
           ),
         ),
         Container(
-          padding: EdgeInsets.only(left: 14, right: 14, top: 10),
-          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+          padding: const EdgeInsets.only(left: 14, right: 14, top: 10),
+          margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
@@ -98,9 +103,9 @@ class ProdutsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.all(6),
+                    padding: const EdgeInsets.all(6),
                     decoration: BoxDecoration(
-                      color: Color(
+                      color: const Color(
                         0xff784abc,
                       ),
                       borderRadius: BorderRadius.circular(20),
@@ -120,7 +125,7 @@ class ProdutsPage extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: Image.asset(
                     'assets/images/apple1.png',
                     height: 130,
@@ -128,39 +133,44 @@ class ProdutsPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Text(
+              const Text(
                 'IPhone 14PM ',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
                 ),
               ),
-              Center(
-                child: const Text(
+              const Center(
+                child: Text(
                   'Write description  ',
                   style: TextStyle(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("\$150",style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                      color: Colors.red
-                  ),),
-                  Icon(Icons.add_shopping_cart,color: Colors.red,),
+                  Text(
+                    "\$150",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.red),
+                  ),
+                  Icon(
+                    Icons.add_shopping_cart,
+                    color: Colors.red,
+                  ),
                 ],
               )
             ],
           ),
         ),
         Container(
-          padding: EdgeInsets.only(left: 14, right: 14, top: 10),
-          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+          padding: const EdgeInsets.only(left: 14, right: 14, top: 10),
+          margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
@@ -171,9 +181,9 @@ class ProdutsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.all(6),
+                    padding: const EdgeInsets.all(6),
                     decoration: BoxDecoration(
-                      color: Color(
+                      color: const Color(
                         0xff784abc,
                       ),
                       borderRadius: BorderRadius.circular(20),
@@ -193,7 +203,7 @@ class ProdutsPage extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: Image.asset(
                     'assets/images/img3.png',
                     height: 130,
@@ -201,39 +211,44 @@ class ProdutsPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Text(
+              const Text(
                 'Apple Watch',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
                 ),
               ),
-              Center(
-                child: const Text(
+              const Center(
+                child: Text(
                   'Write description ',
                   style: TextStyle(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("\$150",style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                      color: Colors.red
-                  ),),
-                  Icon(Icons.add_shopping_cart,color: Colors.red,),
+                  Text(
+                    "\$150",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.red),
+                  ),
+                  Icon(
+                    Icons.add_shopping_cart,
+                    color: Colors.red,
+                  ),
                 ],
               )
             ],
           ),
         ),
         Container(
-          padding: EdgeInsets.only(left: 14, right: 14, top: 10),
-          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+          padding: const EdgeInsets.only(left: 14, right: 14, top: 10),
+          margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
@@ -244,9 +259,9 @@ class ProdutsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.all(6),
+                    padding: const EdgeInsets.all(6),
                     decoration: BoxDecoration(
-                      color: Color(
+                      color: const Color(
                         0xff784abc,
                       ),
                       borderRadius: BorderRadius.circular(20),
@@ -266,7 +281,7 @@ class ProdutsPage extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: Image.asset(
                     'assets/images/watch.png',
                     height: 130,
@@ -274,39 +289,44 @@ class ProdutsPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Text(
+              const Text(
                 'Apple Watch',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
                 ),
               ),
-              Center(
-                child: const Text(
+              const Center(
+                child: Text(
                   'Write description ',
                   style: TextStyle(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("\$150",style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                      color: Colors.red
-                  ),),
-                  Icon(Icons.add_shopping_cart,color: Colors.red,),
+                  Text(
+                    "\$150",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.red),
+                  ),
+                  Icon(
+                    Icons.add_shopping_cart,
+                    color: Colors.red,
+                  ),
                 ],
               )
             ],
           ),
         ),
         Container(
-          padding: EdgeInsets.only(left: 14, right: 14, top: 10),
-          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+          padding: const EdgeInsets.only(left: 14, right: 14, top: 10),
+          margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
@@ -317,9 +337,9 @@ class ProdutsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.all(6),
+                    padding: const EdgeInsets.all(6),
                     decoration: BoxDecoration(
-                      color: Color(
+                      color: const Color(
                         0xff784abc,
                       ),
                       borderRadius: BorderRadius.circular(20),
@@ -339,7 +359,7 @@ class ProdutsPage extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: Image.asset(
                     'assets/images/charger1.png',
                     height: 130,
@@ -347,39 +367,44 @@ class ProdutsPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Text(
+              const Text(
                 'USB C Charger',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
                 ),
               ),
-              Center(
-                child: const Text(
+              const Center(
+                child: Text(
                   'Write description',
                   style: TextStyle(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("\$65",style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                      color: Colors.red
-                  ),),
-                  Icon(Icons.add_shopping_cart,color: Colors.red,),
+                  Text(
+                    "\$65",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.red),
+                  ),
+                  Icon(
+                    Icons.add_shopping_cart,
+                    color: Colors.red,
+                  ),
                 ],
               )
             ],
           ),
         ),
         Container(
-          padding: EdgeInsets.only(left: 14, right: 14, top: 10),
-          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+          padding: const EdgeInsets.only(left: 14, right: 14, top: 10),
+          margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
@@ -390,9 +415,9 @@ class ProdutsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.all(6),
+                    padding: const EdgeInsets.all(6),
                     decoration: BoxDecoration(
-                      color: Color(
+                      color: const Color(
                         0xff784abc,
                       ),
                       borderRadius: BorderRadius.circular(20),
@@ -412,7 +437,7 @@ class ProdutsPage extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: Image.asset(
                     'assets/images/watch.png',
                     height: 130,
@@ -420,37 +445,41 @@ class ProdutsPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Text(
+              const Text(
                 'Apple Watch',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
                 ),
               ),
-              Center(
-                child: const Text(
+              const Center(
+                child: Text(
                   'Write description',
                   style: TextStyle(),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("\$150",style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                      color: Colors.red
-                  ),),
-                  Icon(Icons.add_shopping_cart,color: Colors.red,),
+                  Text(
+                    "\$150",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.red),
+                  ),
+                  Icon(
+                    Icons.add_shopping_cart,
+                    color: Colors.red,
+                  ),
                 ],
               )
             ],
           ),
         ),
-
       ],
     );
   }
